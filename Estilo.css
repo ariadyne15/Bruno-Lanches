@@ -1,0 +1,40 @@
+*{
+margin: 0;
+padding: 0;
+font-family:"Verdana","Sans-serif" ;
+}
+
+header{
+	width: 800px;
+	height: 50px auto;
+	margin: 50px;
+}
+
+main{
+	width: 800px;
+	height: 300px;
+	margin: 100px auto;
+	padding: 50px 30px;
+	background-color: blueviolet;
+	border-radius: 10px;
+}
+
+header h1{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+main p{
+	font-size: 1.2rem;
+}
+footer{
+	margin: 50px;
+	height: 4rem;
+	width: 100%;
+	background-color: darkmagenta;
+	padding: 30px 50px;
+}
+#autor{
+
+}
+ 
