@@ -1,0 +1,1 @@
+osso projeto se trata-se de uma aprimoracão do setor de informatica
