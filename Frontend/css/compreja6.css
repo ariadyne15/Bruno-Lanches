@@ -1,0 +1,30 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Estilo básico para labels */
+label {
+    color: #d41111; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    display: block; /* O label ocupa toda a largura disponível */
+    margin-bottom: 8px; /* Espaço abaixo do label */
+    cursor: pointer; /* Torna o cursor uma mãozinha ao passar sobre o label */
+}
+
+/* Estilo para labels dentro de formulários */
+form label {
+    margin-top: 16px; /* Espaço acima do label dentro de formulários */
+}
+/* Estilo básico para itens de lista */
+ul {
+    list-style-type: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+li {
+    font-size: 14px; /* Tamanho da fonte */
+    color: #555; /* Cor do texto */
+    padding: 10px; /* Espaço ao redor do item da lista */
+    border-bottom: 1px solid #ddd; /* Linha abaixo de cada item */
+    transition: background-color 0.3s; /* Transição suave para mudanças de cor */
+}

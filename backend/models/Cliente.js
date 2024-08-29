@@ -1,4 +1,4 @@
-const mongoose = require('../db/conecta')
+const mongoose = require('../bd/conecta')
 const {Schema} = mongoose
 
 const cliente = mongoose.model('cliente',

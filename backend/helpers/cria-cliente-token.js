@@ -12,4 +12,5 @@ async(cliente, req, res) =>{
         clienteId: cliente._id
     })
 }
-MediaSource.exports = criarClienteToken
+
+module.exports = criarClienteToken

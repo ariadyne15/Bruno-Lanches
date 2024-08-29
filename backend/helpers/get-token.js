@@ -1,0 +1,13 @@
+//  CRIADO A PARTIR DA AULA DE 25/07/2024
+const getToken = (req) =>{
+const autHeader = req.headers.autorizacao
+/* ABAIXO A FUNÇÃO SPLIT() DO JS PEGA A STRING DENTRO DE AUTHEADER E A DIVIDE
+ QUANDO ENCONTRAR COMO SEPARADOR UM ESPAÇO. POR FIM, CONSIDERA APENAS A SEGUNDA 
+ PARTE UM ARRAY COMEÇA NA POSIÇÃO [0], ENTÃO [1] É O SEGUNDO ELEMENTO DE UM ARRAY.
+ O RESULTADO É GRAVADO NA VARIÁVEL TOKEN */
+const token = autHeader.spliit(" ")[1]
+return token
+}
+
+
+module.exports = getToken
