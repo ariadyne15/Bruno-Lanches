@@ -1,18 +1,232 @@
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ *{
+font-family:'Times New Roman', Times, serif;
 }
+body{
+    background-color:#d37319;
+    color: #ffffff;
+}
+/* CORES DE FUNDO*/
+.bg-cor-1{
+    background-color: #000000;
+
+}
+.bg-cor-2{
+    background-color:#d37319;
+}
+/* CORES PARA TEXTO */
+.cor-1{
+    color:#fff;
+}
+.cor-2{
+    color: #ffffff;
+}
+.cor-clara{
+    color: #e0630f;
+}
+.cor-escura{
+    color: #e0630f;
+}
+
+/* Estilos para o link ad marca (navbar-rand) */
+.navbar-brand{
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-brand:hover{
+    color:#f7f7f7;
+}
+
+@media(min-width:768px){
+    .navbar-brand{
+        text-align: left;
+    }
+}
+
+/* AJUSTE DOS ICONES DA NAVBAR */
+
+/* Estilo para o botão #btnLer */
+#btnLer {
+    background-color: #000000; /* Cor de fundo laranja */
+    color: #d37319; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para o botão #btnLer */
+#btnLer:hover {
+    background-color: #b15a0e; /* Cor laranja mais escura quando o botão é hover */
+}
+
+
+#navbar-itens{
+    justify-content: space-between;
+
+}
+
+@media(min-width:768px){
+    #navbar-itens{
+        min-width: 80%;
+        display: flex;
+    }
+}
+
+#navbar .navbar-nav{
+    flex-direction: row;
+    justify-content: end;
+}
+
+#navbar .navbar-nav li{
+    margin-left: 1em;
+}
+
+#navbar i{
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff831e;
+}
+
+
+
+
+/* AJUSTE DA LARGURA DO FORME DE PESQUISA */
+#form-pesquisa{
+    width: 100%;
+    margin: 2em 0;
+}
+@media(min-width:768px){
+    #form-pesquisa{
+        width: 50%;
+        margin: 0;
+    }
+}
+
+/* ESTILO O FORM DE PESQUISA */
+
+#form-pesquisa{
+    border: 2px solid #222120;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+#form-pesquisa input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+#form-pesquisa input:focus{
+    box-shadow: none;
+}
+
+#form-pesquisa input::placeholder{
+    color: #eed7d0;
+}
+
+
+/* CSS DA NAVBAR INFERIO */
+#container-navbar-inferior .container{
+    justify-content: flex-end;
+}
+/* ESTILIZANDO O TEXTO DOS LINKS DA NAVBAR INFERIOR */
+#container-navbar-inferior a{
+    font-weight: 50.0;
+    color:#000000
+}
+.navbar-toggler{
+    font-size: 1,5em;
+}
+#banners-container{
+    width: 100%;
+    height: 900%;
+}
+.carousel-caption{
+    bottom: 5em;
+    padding: 1em;
+}
+.carousel-caption h5{
+    font-size: 1.8em;
+}
+@media(min-width: 768px){
+    #slider .carousel-item,
+    #slider img{
+        height: 600px;
+    }
+}
+
+/* CSS DOS MINI-BANNERS */
+#mini-banners-container {
+    margin-top: 1em;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Adiciona espaçamento entre os banners */
+}
+
+#mini-banners-container .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1em; /* Espaço adicional entre cada banner */
+}
+
+@media(min-width: 768px) {
+    #mini-banners-container .col-12 {
+        max-width: 30%;
+    }
+}
+
+#mini-banners-container .col-12 h2 {
+    text-transform: uppercase;
+    max-width: 50%;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#mini-banners-container .col-12 img {
+    height: 200px;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+#mini-banners-container .col-12 a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+#mini-banners-container .col-12 a:hover {
+    color: #ebe9e9;
+}
+
 /* Estilo básico para labels */
 label {
-    color: #d41111; /* Cor do texto */
+    color: #0a0a0a; /* Cor do texto */
     font-weight: bold; /* Negrito */
     display: block; /* O label ocupa toda a largura disponível */
-    margin-bottom: 8px; /* Espaço abaixo do label */
+    margin-bottom: 20px; /* Espaço abaixo do label */
     cursor: pointer; /* Torna o cursor uma mãozinha ao passar sobre o label */
 }
 
 /* Estilo para labels dentro de formulários */
 form label {
-    margin-top: 16px; /* Espaço acima do label dentro de formulários */
+    margin-top: 160px; /* Espaço acima do label dentro de formulários */
 }
 /* Estilo básico para itens de lista */
 ul {
@@ -23,8 +237,14 @@ ul {
 
 li {
     font-size: 14px; /* Tamanho da fonte */
-    color: #555; /* Cor do texto */
-    padding: 10px; /* Espaço ao redor do item da lista */
-    border-bottom: 1px solid #ddd; /* Linha abaixo de cada item */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px; /* Espaço ao redor do item da lista */
+    /* border-bottom: 2px solid #000000;  Linha abaixo de cada item */
     transition: background-color 0.3s; /* Transição suave para mudanças de cor */
+}
+
+ h2,p, li, label {
+  text-align: justify; /* Centraliza o texto dentro desses elementos */
+    margin: 1em; /* Adiciona uma margem ao redor dos elementos equivalente a um dedo */
+
 }

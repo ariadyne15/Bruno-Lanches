@@ -1,8 +1,8 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family:'Times New Roman', Times, serif;
 }
 body{
-    background-color:#141414;
+    background-color:#d37319;
     color: #ffffff;
 }
 /* CORES DE FUNDO*/
@@ -45,8 +45,29 @@ body{
 }
 
 /* AJUSTE DOS ICONES DA NAVBAR */
+
+/* Estilo para o botão #btnLer */
+#btnLer {
+    background-color: #000000; /* Cor de fundo laranja */
+    color: #d37319; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito de hover para o botão #btnLer */
+#btnLer:hover {
+    background-color: #b15a0e; /* Cor laranja mais escura quando o botão é hover */
+}
+
+
 #navbar-itens{
     justify-content: space-between;
+
 }
 
 @media(min-width:768px){
@@ -69,6 +90,13 @@ body{
     font-size: 1.2rem;
 }
 
+.navbar-nav .nav-link:hover {
+    color: #ff831e;
+}
+
+
+
+
 /* AJUSTE DA LARGURA DO FORME DE PESQUISA */
 #form-pesquisa{
     width: 100%;
@@ -82,6 +110,7 @@ body{
 }
 
 /* ESTILO O FORM DE PESQUISA */
+
 #form-pesquisa{
     border: 2px solid #222120;
     border-radius: 3px;
@@ -134,12 +163,15 @@ body{
 }
 
 /* CSS DOS MINI-BANNERS */
-#mini-banners-container{
-    margin-top: 3em;
+#mini-banners-container {
+    margin-top: 1em;
     z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Adiciona espaçamento entre os banners */
 }
 
-#mini-banners-container .col-12{
+#mini-banners-container .col-12 {
     z-index: 1;
     height: 300px;
     padding: 1.5em;
@@ -147,32 +179,38 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 1em; /* Espaço adicional entre cada banner */
 }
 
-@media(min-width:768px){
-    #mini-banners-container .col-12{
+@media(min-width: 768px) {
+    #mini-banners-container .col-12 {
         max-width: 30%;
     }
 }
-#mini-banners-container .col-12 h2{
+
+#mini-banners-container .col-12 h2 {
     text-transform: uppercase;
     max-width: 50%;
     font-size: 2em;
     font-weight: 700;
     line-height: 1em;
 }
-#mini-banners-container .col-12 img{
+
+#mini-banners-container .col-12 img {
     height: 200px;
     position: absolute;
     right: 1em;
     bottom: 1em;
 }
-#mini-banners-container .col-12 a{
+
+#mini-banners-container .col-12 a {
     font-weight: bold;
     color: #fff;
     font-size: 0.8em;
     transition: 0.5s;
+    z-index: 10;
 }
-#mini-banners-container .col-12 a:hover{
+
+#mini-banners-container .col-12 a:hover {
     color: #ebe9e9;
 }
